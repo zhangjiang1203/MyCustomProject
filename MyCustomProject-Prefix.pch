@@ -1,0 +1,13 @@
+//
+//  MyCustomProject-Prefix.pch
+//  MyCustomProject
+//
+//  Created by pg on 2017/1/5.
+//  Copyright © 2017年 DZHFCompany. All rights reserved.
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "TPHeader.h"
+#endif

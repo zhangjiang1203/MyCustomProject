@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TPTabBarView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VO-5u-oIq" userLabel="DiscoverButton">
+                    <state key="normal" image="tabbar_discover_normal"/>
+                    <state key="selected" image="tabbar_discorver"/>
+                    <connections>
+                        <action selector="selectButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="teB-Wy-lNl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhS-Tj-cxK" userLabel="PlusButton">
+                    <state key="normal" image="tabbar_build"/>
+                    <connections>
+                        <action selector="selectButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="hM3-Oc-c1Y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kP9-G5-2sZ" userLabel="MessageButton">
+                    <state key="normal" image="tabbar_message_normal"/>
+                    <state key="selected" image="tabbar_message"/>
+                    <connections>
+                        <action selector="selectButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="hdK-vN-pzP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qkp-4M-EWF" userLabel="PersonalButton">
+                    <state key="normal" image="tabbar_personal_normal"/>
+                    <state key="selected" image="tabbar_personal"/>
+                    <connections>
+                        <action selector="selectButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="cli-Pw-ENV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acK-gx-Zjb" userLabel="ChannelButton">
+                    <state key="normal" image="tabbar_pindao_normal"/>
+                    <state key="selected" image="tabbar_pindao"/>
+                    <connections>
+                        <action selector="selectButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="68Z-mS-nke"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ko-8e-9vO">
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="vkT-bW-tH6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Qkp-4M-EWF" secondAttribute="trailing" id="51f-z6-rQY"/>
+                <constraint firstItem="0VO-5u-oIq" firstAttribute="centerY" secondItem="acK-gx-Zjb" secondAttribute="centerY" id="7LN-ON-c5X"/>
+                <constraint firstItem="MhS-Tj-cxK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="AtG-4M-5qn"/>
+                <constraint firstAttribute="bottom" secondItem="acK-gx-Zjb" secondAttribute="bottom" id="DFV-BT-eDW"/>
+                <constraint firstItem="MhS-Tj-cxK" firstAttribute="leading" secondItem="0VO-5u-oIq" secondAttribute="trailing" id="IwD-de-xx1"/>
+                <constraint firstItem="kP9-G5-2sZ" firstAttribute="width" secondItem="acK-gx-Zjb" secondAttribute="width" id="MsC-08-qrR"/>
+                <constraint firstAttribute="trailing" secondItem="8Ko-8e-9vO" secondAttribute="trailing" id="MzC-rC-sV2"/>
+                <constraint firstItem="Qkp-4M-EWF" firstAttribute="width" secondItem="acK-gx-Zjb" secondAttribute="width" id="UMq-4g-y9j"/>
+                <constraint firstItem="0VO-5u-oIq" firstAttribute="width" secondItem="acK-gx-Zjb" secondAttribute="width" id="WXK-Ja-9At"/>
+                <constraint firstItem="8Ko-8e-9vO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XGF-Ko-Oae"/>
+                <constraint firstItem="kP9-G5-2sZ" firstAttribute="leading" secondItem="MhS-Tj-cxK" secondAttribute="trailing" id="ZM1-ed-cqS"/>
+                <constraint firstItem="acK-gx-Zjb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dN4-rJ-cAf"/>
+                <constraint firstItem="kP9-G5-2sZ" firstAttribute="centerY" secondItem="acK-gx-Zjb" secondAttribute="centerY" id="hg0-li-eJj"/>
+                <constraint firstItem="8Ko-8e-9vO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pQs-a9-0Sp"/>
+                <constraint firstItem="0VO-5u-oIq" firstAttribute="leading" secondItem="acK-gx-Zjb" secondAttribute="trailing" id="prv-Fp-xAh"/>
+                <constraint firstItem="acK-gx-Zjb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="q27-tx-cuA"/>
+                <constraint firstItem="MhS-Tj-cxK" firstAttribute="width" secondItem="acK-gx-Zjb" secondAttribute="width" id="s4P-Lx-vSK"/>
+                <constraint firstAttribute="bottom" secondItem="MhS-Tj-cxK" secondAttribute="bottom" id="tUa-0d-wuE"/>
+                <constraint firstItem="MhS-Tj-cxK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="x2s-Kj-gKf"/>
+                <constraint firstItem="Qkp-4M-EWF" firstAttribute="centerY" secondItem="acK-gx-Zjb" secondAttribute="centerY" id="yYZ-IP-Vtr"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="channelBtn" destination="acK-gx-Zjb" id="Vke-Yh-Yfa"/>
+                <outlet property="discoverBtn" destination="0VO-5u-oIq" id="PPP-Z3-Trf"/>
+                <outlet property="messageBtn" destination="kP9-G5-2sZ" id="cDt-tH-E2A"/>
+                <outlet property="personalBtn" destination="Qkp-4M-EWF" id="HTH-h9-LN0"/>
+                <outlet property="plusBtn" destination="MhS-Tj-cxK" id="7BQ-iV-Nfm"/>
+            </connections>
+            <point key="canvasLocation" x="256" y="597"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tabbar_build" width="37" height="37"/>
+        <image name="tabbar_discorver" width="23" height="37"/>
+        <image name="tabbar_discover_normal" width="23" height="37"/>
+        <image name="tabbar_message" width="23" height="37"/>
+        <image name="tabbar_message_normal" width="23" height="37"/>
+        <image name="tabbar_personal" width="23" height="37"/>
+        <image name="tabbar_personal_normal" width="23" height="37"/>
+        <image name="tabbar_pindao" width="23" height="37"/>
+        <image name="tabbar_pindao_normal" width="23" height="37"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
